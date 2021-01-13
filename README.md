@@ -1,10 +1,16 @@
 # alexa-crawler
 
-1- sudo apt update && sudo apt -y upgrade
+1- Update (For debian base OS) :
 
-2- sudo apt install python3-pip
+    sudo apt update && sudo apt -y upgrade
 
-3- pip install virtualenv
+2- Install Python package manager :
+
+    sudo apt install python3-pip
+
+3- Install virtualenv :
+
+    pip install virtualenv
 
 4- Create Virtualenv:
 
