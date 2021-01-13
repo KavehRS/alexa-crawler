@@ -1,0 +1,8 @@
+selenium
+bs4
+numpy
+bs2json
+pandas
+time
+itertools
+requests
