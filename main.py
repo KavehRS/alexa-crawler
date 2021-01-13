@@ -10,18 +10,16 @@ from bs2json import bs2json
 import re
 import itertools
 import requests
-# from urllib.request import urlopen as uReq
-df1 = pd.read_excel('/home/i/Documents/alexsa/alexsa_site.xlsx')
-url_list=list(itertools.chain(*df1.iloc[:,[0]].values.tolist()))
 
-# url= 'https://www.alexa.com/siteinfo/ofoghtv.ir'
-# url_list=['iseema.ir']
-country_rank_list=[]
-global_rank_list=[]
-Daily_Pageviews_per_Visitor_list=[]
-Daily_Time_on_Site_list=[]
-Bounce_rate_list=[]
-for i in range (len(url_list)):
+    df1 = pd.read_excel('/home/i/Documents/alexsa/alexsa_site.xlsx')
+    url_list=list(itertools.chain(*df1.iloc[:,[0]].values.tolist()))
+
+    country_rank_list=[]
+    global_rank_list=[]
+    Daily_Pageviews_per_Visitor_list=[]
+    Daily_Time_on_Site_list=[]
+    Bounce_rate_list=[]
+    for i in range (len(url_list)):
 
     alexsa_site_info_url='https://www.alexa.com/siteinfo/'
     driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
@@ -87,9 +85,3 @@ dic={'نام سایت':url_list,'Bounce rate':Bounce_rate_list,'Daily Pageviews 
 
 output = pd.DataFrame(dic)
 output.to_excel('~/Documents/alexsa_output.xlsx',index=False)
-# print(country_rank_list)
-# print(global_rank_list)
-# print(Daily_Pageviews_per_Visitor_list)
-# print(Daily_Time_on_Site_list)
-# print(Bounce_rate_list)
-# print(dic)
