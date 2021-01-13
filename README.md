@@ -28,10 +28,10 @@ On Linux:
 
 	sudo apt install chromium-chromedriver
 
-8- Edit "input" path in main.py line 14
+8-   Edit  "input" path in main.py line 14
 
-9- Edit "webdriver.Chrome" path in main.py line 25
+9-   Edit  "webdriver.Chrome" path in main.py line 25
 
-10- Edit "output" path in main.py line 87
+10-  Edit  "output" path in main.py line 87
 
 
