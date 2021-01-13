@@ -1,8 +1,8 @@
-# alexa-crwaler
+# alexa-crawler
 
-1- sudo apt update && ssudo apt -y upgrade
+1- sudo apt update && sudo apt -y upgrade
 
-2- sudo apt install python-pip
+2- sudo apt install python3-pip
 
 3- pip install virtualenv
 
