@@ -4,3 +4,5 @@ numpy
 bs2json==0.0.1
 pandas
 requests
+xlrd
+openpyxl
