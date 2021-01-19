@@ -40,4 +40,5 @@ On Linux:
 
 10-  Edit  "output" path in main.py line 87
 
+11-  Run main.py with Python3 
 
