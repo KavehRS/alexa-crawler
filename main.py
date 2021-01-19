@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -11,15 +12,15 @@ import re
 import itertools
 import requests
 
-    df1 = pd.read_excel('/home/i/Documents/alexsa/alexsa_site.xlsx')
-    url_list=list(itertools.chain(*df1.iloc[:,[0]].values.tolist()))
+df1 = pd.read_excel('/home/i/Documents/alexsa/sites.xlsx')
+url_list=list(itertools.chain(*df1.iloc[:,[0]].values.tolist()))
 
-    country_rank_list=[]
-    global_rank_list=[]
-    Daily_Pageviews_per_Visitor_list=[]
-    Daily_Time_on_Site_list=[]
-    Bounce_rate_list=[]
-    for i in range (len(url_list)):
+country_rank_list=[]
+global_rank_list=[]
+Daily_Pageviews_per_Visitor_list=[]
+Daily_Time_on_Site_list=[]
+Bounce_rate_list=[]
+for i in range (len(url_list)):
 
     alexsa_site_info_url='https://www.alexa.com/siteinfo/'
     driver = webdriver.Chrome('/usr/lib/chromium-browser/chromedriver')
@@ -84,4 +85,6 @@ dic={'نام سایت':url_list,'Bounce rate':Bounce_rate_list,'Daily Pageviews 
 'Daily Time on Site':Daily_Time_on_Site_list,'global rank':global_rank_list,'country rank':country_rank_list}
 
 output = pd.DataFrame(dic)
-output.to_excel('~/Documents/alexsa_output.xlsx',index=False)
+output.to_excel('~/Documents/output.xlsx',index=False)
+
+
