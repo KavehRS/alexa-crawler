@@ -65,7 +65,7 @@ On Linux:
 
 12-  the cluster will not be running as a systemd service. Consider using systemctl:
 
-  sudo systemctl start postgresql@13-main
+    sudo systemctl start postgresql@13-main
 
 Warn: You must run this program as the cluster owner (postgres) or root
 
