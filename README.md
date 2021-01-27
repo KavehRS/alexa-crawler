@@ -1,6 +1,5 @@
 # alexa-crawler
-
-[![Run tests](https://github.com/public-apis/public-apis/workflows/Run%20tests/badge.svg)]() 
+ 
 
 ## Introduction
 A crawler that takes a list of sites and extracts information about them from the Alexa.com 
