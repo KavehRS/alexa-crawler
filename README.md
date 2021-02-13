@@ -119,5 +119,5 @@ Warn: You must run this program as the cluster owner (postgres) or root
 
 ## License
 
-The GNU GENERAL PUBLIC LICENSE (GPL v.3). Please see [License File](LICENSE.md) for more information.
+Kaveh RezaeiShiraz 2021 - The GNU GENERAL PUBLIC LICENSE (GPL v.3). Please see [License File](LICENSE.md) for more information.
 
