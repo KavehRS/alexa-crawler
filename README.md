@@ -22,7 +22,7 @@ A crawler that takes a list of sites and extracts information about them from th
 
 3- Install virtualenv :
 
-    pip install virtualenv
+    pip3 install virtualenv
 
 4- Create Virtualenv:
 
