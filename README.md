@@ -1,14 +1,10 @@
-# alexa-crawler
+# alexa-crawler (python 3.8.5)
  
 
 ## Introduction
 A crawler that takes a list of sites and extracts information about them from the Alexa.com 
 
-##
 
-##
-
-##
 
 ## Help
 
