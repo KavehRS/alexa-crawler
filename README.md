@@ -38,6 +38,11 @@ On Linux:
 
     pip3 install -r requirements.txt
     
+OR
+
+    sudo pip3 install -r requirements.txt
+
+    
 7- Install chromium chromedriver
 
 	sudo apt install chromium-chromedriver
